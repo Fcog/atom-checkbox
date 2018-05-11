@@ -1,0 +1,16 @@
+{
+    "name": "fcog/atom-checkbox",
+    "description": "Checkbox component for the WP Lean Atomic Theme",
+    "keywords": ["atomic design", "lean theme"],
+    "type": "package",
+    "require": {
+        "moxie-lean/loader": "^1.3"
+    },
+    "license": "MIT",
+    "authors": [{
+        "name": "Francisco Giraldo",
+        "email": "fcog111@gmail.com"
+    }],
+    "version": "1.0.0",
+    "minimum-stability": "dev"
+}

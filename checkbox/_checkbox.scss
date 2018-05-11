@@ -1,0 +1,58 @@
+.a__checkbox {
+  display: inline-flex;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  position: relative;
+
+  & + label {
+    margin-top: 7px;
+    margin-bottom: 0;
+    margin-left: 12px;
+    max-width: 338px;
+    line-height: 22px;
+    cursor: pointer;
+  }
+
+  &__style {
+    cursor: pointer;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background: $light-black;
+    border: 2px solid $white;
+    border-radius: 3px;
+
+    &:after {
+      opacity: 0;
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 7px;
+      background: transparent;
+      top: 6px;
+      left: 5px;
+      border: 2px solid $white;
+      border-top: none;
+      border-right: none;
+      transform: rotate(-45deg);
+    }
+  }
+
+  /**
+  * Create the checkbox state for the tick
+  */
+  &__input {
+    outline: none;
+
+    &:checked + .a__checkbox__style {
+      background: $light-black;
+
+      &:after {
+        opacity: 1;
+      }
+    }
+  }
+}
